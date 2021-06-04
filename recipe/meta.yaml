@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - pmgrLauncher.sh = pmgr.pmgr:main
@@ -47,3 +47,4 @@ extra:
   recipe-maintainers:
     - klauer
     - zllentz
+    - zrylettc

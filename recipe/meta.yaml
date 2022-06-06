@@ -1,5 +1,5 @@
 {% set name = "pmgr" %}
-{% set version = "2.0.2" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/pcdshub/pmgr/archive/R{{ version }}.tar.gz
-  sha256: 78e605a0205c468c89f275eeb74b62c63dfd9a6e6cb8b18e3afec93401066969
+  sha256: 0f1a9c7950db62741d450db4fbc2c1d9d5ec6c05a3d03523575afa4d335e9986
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pmgrLauncher.sh = pmgr.pmgr:main
     - pmgrUtils.sh = pmgr.pmgrUtils:main
@@ -23,13 +23,14 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pyqt >=5
-    - pyca =3.1.1
-    - epicscorelibs =7.0.4.99.1.2
-    - pykerberos >=1.1.14
-    - mysqlclient =1.3.12|>=2.0.3
     - docopt
+    - epicscorelibs
+    - mysqlclient =1.3.12|>=2.0.3
+    - numpy
     - pcdsutils
+    - pyca
+    - pykerberos >=1.1.14
+    - pyqt >=5
 
 test:
   imports:

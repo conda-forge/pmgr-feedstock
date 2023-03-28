@@ -147,6 +147,6 @@ Feedstock Maintainers
 
 * [@klauer](https://github.com/klauer/)
 * [@mcb64](https://github.com/mcb64/)
+* [@tangkong](https://github.com/tangkong/)
 * [@zllentz](https://github.com/zllentz/)
-* [@zrylettc](https://github.com/zrylettc/)
 

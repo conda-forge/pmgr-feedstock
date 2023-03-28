@@ -1,5 +1,5 @@
 {% set name = "pmgr" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/pmgr/archive/R{{ version }}.tar.gz
-  sha256: 526b87d22bdd203467e181cb1f255c5ec72d953b12ef400409656e50772286e9
+  sha256: 0eb5a868e1a7dd40b7be4fea03ce2c35f0fad1362c9d50a9e9c60c509fa05f6e
 
 build:
   noarch: python

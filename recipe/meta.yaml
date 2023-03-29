@@ -36,8 +36,8 @@ test:
   imports:
     - pmgr
   commands:
-  - pmgrLauncher.sh --help
-  - pmgrUtils.sh --help
+  - QT_QPA_PLATFORM="offscreen" pmgrLauncher.sh --help
+  - QT_QPA_PLATFORM="offscreen" pmgrUtils.sh --help
 
 about:
   home: https://github.com/pcdshub/pmgr

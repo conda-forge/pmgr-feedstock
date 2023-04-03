@@ -1,11 +1,11 @@
-About pmgr
-==========
+About pmgr-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pmgr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pcdshub/pmgr
 
 Package license: LicenseRef-BSD-3-Clause-SLAC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pmgr-feedstock/blob/main/LICENSE.txt)
 
 Summary: LCLS Device Configuration Parameter Manager
 
@@ -147,6 +147,6 @@ Feedstock Maintainers
 
 * [@klauer](https://github.com/klauer/)
 * [@mcb64](https://github.com/mcb64/)
+* [@tangkong](https://github.com/tangkong/)
 * [@zllentz](https://github.com/zllentz/)
-* [@zrylettc](https://github.com/zrylettc/)
 

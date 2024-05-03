@@ -49,7 +49,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - klauer
+    - conda-forge/pcdsdevices
     - mcb64
-    - tangkong
-    - zllentz

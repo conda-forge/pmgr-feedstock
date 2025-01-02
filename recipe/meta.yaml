@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pmgrLauncher.sh = pmgr.pmgr:main
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools_scm
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pyqt >=5
     - pyca >=3.2.0
     - pykerberos >=1.1.14
@@ -32,6 +32,8 @@ requirements:
     - pcdsutils
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pmgr
     - pmgr.pmgrUtils
